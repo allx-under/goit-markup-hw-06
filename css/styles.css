@@ -132,6 +132,7 @@ img {
 }
 
 .modal-label {
+  display: block;
   font-size: 12px;
   line-height: 1.16; 
   letter-spacing: 0.01em;
@@ -140,9 +141,9 @@ img {
 }
 
 .input-container {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-bottom: 10px;
+  position: relative;
 }
 .modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -158,8 +159,18 @@ img {
   border-radius: 4px;
 }
 
+.modal-icon-person {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  
+}
+
 .modal-btn,
-.hero-btn {
+.hero-btn,
+.footer-form-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -172,7 +183,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 200px;
-  margin-top: 30px;
   padding:10px 32px;
   border: transparent;
 }
@@ -314,6 +324,7 @@ img {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 
 }
 
@@ -666,6 +677,48 @@ transition: color var(--animation-duration) var(--animation-function);
 .footer-social-link:focus {
   background-color: var(--accent-color);
 }
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form-label {
+  display: block;
+  color: var(--add-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 15px;
+  padding: 15px 16px;
+}
+
+.footer-form-input:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.footer-icon-send {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  
+}
+
+
+
+
+
+
 
 /* ----------------Portfolio---------------- */
 

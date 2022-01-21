@@ -437,6 +437,25 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form" action="">
+          <label for="footer-input" class="footer-form-label">
+            Подпишитесь на рассылку</label
+          >
+          <input
+            class="footer-form-input"
+            type="email"
+            name="user-email"
+            placeholder="Email"
+            id="footer-input"
+          />
+
+          <button class="footer-form-btn" type="submit">
+            Подписаться<svg class="footer-icon-send">
+              <use href="./images/icons.svg#footer-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -457,6 +476,9 @@
                 name="name"
                 id="user-name"
               />
+              <svg class="modal-icon-person">
+                <use href="./images/icons.svg#modal-icon-person"></use>
+              </svg>
             </div>
             <div class="input-container">
               <label class="modal-label" for="user-tel">Телефон</label>
